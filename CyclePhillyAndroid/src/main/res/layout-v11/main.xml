@@ -91,9 +91,9 @@
         android:textColor="#ff40cdff" />
 
     <TextView android:layout_height="wrap_content" android:id="@+id/TextViewPreviousTrips" android:text="@string/previous_trips" android:layout_width="fill_parent" android:gravity="center"
-        android:layout_weight="0.43"></TextView><ListView android:layout_height="93dp" android:id="@+id/ListSavedTrips" android:layout_width="fill_parent"
+        android:layout_weight="0.1"></TextView><ListView android:layout_height="93dp" android:id="@+id/ListSavedTrips" android:layout_width="fill_parent"
     android:layout_weight=".7"></ListView>
 
-    <Button android:layout_height="95dp" android:id="@+id/ButtonStart" android:text="@string/startNewTrip" android:textStyle="bold" android:layout_width="fill_parent" android:drawableLeft="@drawable/bike" android:layout_margin="8sp" android:hapticFeedbackEnabled="true" android:textSize="24sp"></Button>
+    <Button android:layout_height="95dp" android:id="@+id/ButtonStart" android:text="@string/startNewTrip" android:textStyle="bold" android:layout_width="fill_parent" android:drawableLeft="@drawable/webikesdicon100x100" android:layout_margin="8sp" android:hapticFeedbackEnabled="true" android:textSize="24sp"></Button>
 
 </LinearLayout>

@@ -248,7 +248,7 @@ public class RecordingService extends Service implements LocationListener {
 	    //noting parameters - soundpool.play(soundID, leftVolume, rightVolume, priority, loop, rate)
 
 		NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		int icon = R.drawable.icon25;
+		int icon = R.drawable.webikesdicon25x25;
         long when = System.currentTimeMillis();
         int minutes = (int) (when - trip.startTime) / 60000;
 		CharSequence tickerText = String.format("Still recording (%d min)", minutes);
@@ -273,7 +273,7 @@ public class RecordingService extends Service implements LocationListener {
 
 	private void setNotification() {
 		NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-		int icon = R.drawable.icon25;
+		int icon = R.drawable.webikesdicon25x25;
 		CharSequence tickerText = "Recording...";
 		long when = System.currentTimeMillis();
 
