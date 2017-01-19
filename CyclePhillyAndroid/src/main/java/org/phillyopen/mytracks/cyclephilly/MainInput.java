@@ -115,7 +115,7 @@ public class MainInput extends ActionBarActivity {
     private TextView debugLocation;
     Typeface weatherFont;
 
-    private RecyclerView nearbyStations;
+    //private RecyclerView nearbyStations;
     private List<IndegoStation> indegoList = Collections.emptyList();
     private DataSnapshot indegoDataList;
     private RideIndegoAdapter indegoAdapter;
@@ -317,8 +317,8 @@ public class MainInput extends ActionBarActivity {
             public void onProviderDisabled(String provider) {}
         };
 
-        nearbyStations = (RecyclerView) findViewById(R.id.nearbyStationList);
-        nearbyStations.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        //nearbyStations = (RecyclerView) findViewById(R.id.nearbyStationList);
+        //nearbyStations.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         //Listener for Indego Changes
         indegoRef = new Firebase("https://phl.firebaseio.com/indego/kiosks");
         indegoRef.addValueEventListener(new ValueEventListener() {
@@ -379,7 +379,7 @@ public class MainInput extends ActionBarActivity {
             public void onGeoQueryReady() {
                 System.out.println("GEO READY :"+indegoList.toString());
                 indegoAdapter = new RideIndegoAdapter(getApplicationContext(),indegoList);
-                nearbyStations.setAdapter(indegoAdapter);
+                //nearbyStations.setAdapter(indegoAdapter);
 
 
             }
