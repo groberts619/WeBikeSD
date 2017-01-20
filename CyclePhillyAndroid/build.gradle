@@ -42,3 +42,7 @@ dependencies {
     compile 'com.firebase:firebase-client-android:2.3.0'
     compile 'com.firebase:geofire:1.1.0+'
 }
+
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
