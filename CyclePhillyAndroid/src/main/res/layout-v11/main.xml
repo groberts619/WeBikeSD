@@ -13,6 +13,7 @@
         android:id="@+id/dashboard_bar"
         android:title="WeBikeSD">
 
+        <!-- Changed textColor to #000000 to hide icon -->
         <TextView
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -20,7 +21,7 @@
             android:textStyle="bold"
             style="?android:attr/buttonStyleSmall"
             android:textSize="18dp"
-            android:textColor="#ffdddddd"
+            android:textColor="#000000"
             android:paddingLeft="10dip"
             android:paddingRight="10dip"
             android:autoText="true"
@@ -31,57 +32,99 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:background="#62288abe"
-        android:layout_gravity="center_horizontal">
+    <!--Commented out following block of code to remove weather data, also commented out in MainInput.java-->
 
-
-
-        <TextView
-            android:layout_width="285dp"
-            android:layout_height="wrap_content"
-            android:text="@string/currentTemperature"
-            android:id="@+id/temperatureView"
-            android:textStyle="bold"
-            android:textSize="13dp"
-            android:textColor="#ffdddddd"
-            android:paddingLeft="10dip"
-            android:paddingRight="10dip"
-            android:autoText="true"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/compass"
-            android:layout_toEndOf="@+id/compass" />
-
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:background="#62288abe"-->
+        <!--android:layout_gravity="center_horizontal">-->
+        <!---->
         <!--<TextView-->
-            <!--android:layout_width="192dp"-->
+            <!--android:layout_width="285dp"-->
             <!--android:layout_height="wrap_content"-->
-            <!--android:text="@string/weatherAlert"-->
-            <!--android:id="@+id/weatherAlert"-->
+            <!--android:text="@string/currentTemperature"-->
+            <!--android:id="@+id/temperatureView"-->
             <!--android:textStyle="bold"-->
-            <!--android:textSize="20dp"-->
-            <!--android:textColor="#ff32b4f6"-->
+            <!--android:textSize="13dp"-->
+            <!--android:textColor="#ffdddddd"-->
             <!--android:paddingLeft="10dip"-->
             <!--android:paddingRight="10dip"-->
-            <!--android:layout_gravity="right"-->
-            <!--android:clickable="false"-->
-            <!--android:layout_below="@+id/temperatureView"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentEnd="true"-->
-            <!--android:layout_toRightOf="@+id/weatherView"-->
-            <!--android:layout_toEndOf="@+id/weatherView" />-->
+            <!--android:autoText="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/compass"-->
+            <!--android:layout_toEndOf="@+id/compass" />-->
 
-        <ImageView
-            android:layout_width="21dip"
-            android:layout_height="21dip"
-            android:id="@+id/compass"
-            android:src="@android:drawable/ic_menu_compass"
-            android:layout_centerVertical="true" />
+        <!--<TextView-->
+        <!--android:layout_width="192dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/weatherAlert"-->
+        <!--android:id="@+id/weatherAlert"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="#ff32b4f6"-->
+        <!--android:paddingLeft="10dip"-->
+        <!--android:paddingRight="10dip"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:clickable="false"-->
+        <!--android:layout_below="@+id/temperatureView"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_toRightOf="@+id/weatherView"-->
+        <!--android:layout_toEndOf="@+id/weatherView" />-->
 
-    </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:layout_width="21dip"-->
+            <!--android:layout_height="21dip"-->
+            <!--android:id="@+id/compass"-->
+            <!--android:src="@android:drawable/ic_menu_compass"-->
+            <!--android:layout_centerVertical="true" />-->
 
+    <!--</RelativeLayout>-->
 
+    <!--Commented out following block of code to remove indego, also commented out instances of 'nearbyStations' in MainInput.java-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="165dp"-->
+        <!--android:layout_weight="0.04"-->
+        <!--android:background="#ffefefef"-->
+        <!--android:minHeight="150dp">-->
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ride_indego_nearest"
+            android:textSize="20dp"
+            android:id="@+id/neaby_text"
+            android:textColor="#ff00226b"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/imageView"
+            android:paddingTop="7dp"
+            android:paddingLeft="5dp"
+            android:background="#ffffffff"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_toLeftOf="@+id/imageView" />-->
+
+        <!--<ImageView
+            android:layout_width="100dp"
+            android:layout_height="39dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/indego_white_bg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />-->
+        <!--<ListView android:layout_height="138dp" android:id="@+id/ListNearbyIndego" android:layout_width="fill_parent"-->
+        <!--android:layout_weight="0.36"></ListView>-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:id="@+id/nearbyStationList"-->
+            <!--android:layout_below="@+id/neaby_text">-->
+<!---->
+        <!--</android.support.v7.widget.RecyclerView>-->
+    <!--</RelativeLayout>-->
 
     <TextView
         android:layout_width="wrap_content"
