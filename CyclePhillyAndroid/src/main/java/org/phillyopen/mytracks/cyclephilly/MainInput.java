@@ -94,11 +94,12 @@ public class MainInput extends ActionBarActivity {
     private Toolbar toolbar;
     private final static int MENU_USER_INFO = 0;
     private final static int MENU_CONTACT_US = 1;
-    private final static int MENU_MAP = 2;
+    //private final static int MENU_MAP = 2;
     private final static int MENU_LEGAL_INFO = 3;
+    private final static int MENU_NOTE_THIS = 4;
     public final static int PREF_ANONID = 13;
     final String DEGREE  = "\u00b0";
-    public final static String FIREBASE_REF = "https://cyclephilly.firebaseio.com";
+    public final static String FIREBASE_REF = "https://webikesd-android.firebaseio.com";
     Firebase indegoRef;
     Firebase indegoGeofireRef;
 
@@ -164,7 +165,7 @@ public class MainInput extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
         Firebase.setAndroidContext(this);
 
-        final Firebase ref = new Firebase("https://cyclephilly.firebaseio.com");
+        final Firebase ref = new Firebase("https://webikesd-android.firebaseio.com");
         final Firebase phlref = new Firebase("https://phl.firebaseio.com");
         // Let's handle some launcher lifecycle issues:
 		// If we're recording or saving right now, jump to the existing activity.
@@ -574,8 +575,9 @@ public class MainInput extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(0, MENU_CONTACT_US, 0, "Contact Us").setIcon(android.R.drawable.ic_dialog_email);
         menu.add(0, MENU_USER_INFO, 0, "Edit User Info").setIcon(android.R.drawable.ic_menu_edit);
-        menu.add(0, MENU_MAP, 0, "Cycling Map").setIcon(android.R.drawable.ic_menu_compass);
-        menu.add(0, MENU_LEGAL_INFO, 0, "Legal Information").setIcon(android.R.drawable.ic_menu_info_details);
+        //menu.add(0, MENU_MAP, 0, "Cycling Map").setIcon(android.R.drawable.ic_menu_compass);
+        //menu.add(0, MENU_LEGAL_INFO, 0, "Legal Information").setIcon(android.R.drawable.ic_menu_info_details);
+        menu.add(0, MENU_NOTE_THIS, 0, "Note This...").setIcon(android.R.drawable.ic_menu_edit);
         return true;
     }
 
@@ -588,17 +590,19 @@ public class MainInput extends ActionBarActivity {
             return true;
         case MENU_CONTACT_US:
         	Intent myIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                    "mailto","cyclephilly@gmail.com", null));
-
+                    "mailto","support@teamwebikesd.org", null));
             myIntent.putExtra(Intent.EXTRA_SUBJECT, "WeBikeSD Android App");
             startActivity(Intent.createChooser(myIntent, "Send email..."));
             return true;
-        case MENU_MAP:
+        case MENU_NOTE_THIS:
+            startActivity(new Intent(this, UserNotes.class));
+            return true;
+        /*case MENU_MAP:
         	startActivity(new Intent(this, ShowMapNearby.class));
-        	return true;
-        case MENU_LEGAL_INFO:
+        	return true;*/
+        /*case MENU_LEGAL_INFO:
         	startActivity(new Intent(this, LicenseActivity.class));
-      		return true;
+      		return true;*/
         }
         return false;
     }

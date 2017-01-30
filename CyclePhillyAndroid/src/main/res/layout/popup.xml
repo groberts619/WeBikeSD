@@ -10,7 +10,7 @@
 	android:layout_height="wrap_content"
 	android:layout_gravity="top"
 	android:padding="2dip"
-	android:src="@drawable/icon25"
+	android:src="@drawable/webikesdicon25x25"
 	android:contentDescription="@string/icon"/>
 
 	<LinearLayout

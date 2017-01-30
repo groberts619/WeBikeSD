@@ -63,7 +63,7 @@ public class UserInfoActivity extends Activity {
 	public final static int PREF_RIDERTYPE = 10;
 	public final static int PREF_RIDERHISTORY = 11;
     public final static int PREF_ANONID = 13;
-    public final static String FIRE_REF = "https://cyclephilly.firebaseio.com";
+    public final static String FIRE_REF = "https://webikesd-android.firebaseio.com";
     public final static String FIRE_TOKEN = "bi7GsULLfYOxmv47jt3gh2rgnN5XvjlnpLVTu8wy";
     public final char[] CHARSET_AZ_09 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".toCharArray();
 

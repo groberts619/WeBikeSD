@@ -9,7 +9,7 @@
 	<string name="startNewTrip">Start Trip!</string>
     <string name="weatherAlert"></string>
     <string name="currentTemperature"> -- </string>
-    <string name="cycleReferenceTripsStarted">https://cyclephilly.firebaseio.com/trips-started/2014/</string>
+    <string name="cycleReferenceTripsStarted">https://webikesd-android.firebaseio.com/trips-started/2014/</string>
     <!--<string name="tripsStats"> trips today |  trips total</string>-->
     <string name="tripsStats"></string>
 	<string name="pauseButtonLabel">Pause</string>
