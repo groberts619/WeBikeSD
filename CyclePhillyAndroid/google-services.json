@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "36921684377",
+    "firebase_url": "https://webikesd-android.firebaseio.com",
+    "project_id": "webikesd-android",
+    "storage_bucket": "webikesd-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36921684377:android:daaea4bcef753045",
+        "android_client_info": {
+          "package_name": "com.WeBikeSD.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36921684377-96rj1l9auh245hlvn46r30n4n1btqmh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNNfD-u0NVx9rHngNF_AvvPYXEBSRHF3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
