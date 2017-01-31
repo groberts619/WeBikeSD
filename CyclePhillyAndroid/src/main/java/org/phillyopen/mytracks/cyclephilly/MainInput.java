@@ -115,7 +115,9 @@ public class MainInput extends ActionBarActivity {
     private TextView debugLocation;
     Typeface weatherFont;
 
-    private RecyclerView nearbyStations;
+    // Commented out following line to remove indego from layout-v11\main.xml
+
+    //private RecyclerView nearbyStations;
     private List<IndegoStation> indegoList = Collections.emptyList();
     private DataSnapshot indegoDataList;
     private RideIndegoAdapter indegoAdapter;
@@ -225,9 +227,9 @@ public class MainInput extends ActionBarActivity {
         Firebase weatherRef = new Firebase("https://publicdata-weather.firebaseio.com/philadelphia");
         Firebase tempRef = new Firebase("https://publicdata-weather.firebaseio.com/philadelphia/currently");
 
+//        Commented following block of code to remove weather data in layout-v11\main.xml
 
-
-        tempRef.addValueEventListener(new ValueEventListener() {
+        /*tempRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 Object val = dataSnapshot.getValue();
@@ -263,7 +265,7 @@ public class MainInput extends ActionBarActivity {
             public void onCancelled(FirebaseError firebaseError) {
 
             }
-        });
+        });*/
 
         connectedListener = ref.getRoot().child(".info/connected").addValueEventListener(new ValueEventListener() {
             @Override
@@ -317,8 +319,10 @@ public class MainInput extends ActionBarActivity {
             public void onProviderDisabled(String provider) {}
         };
 
-        nearbyStations = (RecyclerView) findViewById(R.id.nearbyStationList);
-        nearbyStations.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        // Commented out following 2 lines to remove Indego from layout-v11\main.xml
+
+        //nearbyStations = (RecyclerView) findViewById(R.id.nearbyStationList);
+        //nearbyStations.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         //Listener for Indego Changes
         indegoRef = new Firebase("https://phl.firebaseio.com/indego/kiosks");
         indegoRef.addValueEventListener(new ValueEventListener() {
@@ -379,7 +383,10 @@ public class MainInput extends ActionBarActivity {
             public void onGeoQueryReady() {
                 System.out.println("GEO READY :"+indegoList.toString());
                 indegoAdapter = new RideIndegoAdapter(getApplicationContext(),indegoList);
-                nearbyStations.setAdapter(indegoAdapter);
+
+                // Commented out following line to remove indego from layout-11\main.xml
+
+                //nearbyStations.setAdapter(indegoAdapter);
 
 
             }
@@ -432,6 +439,9 @@ public class MainInput extends ActionBarActivity {
     private void makeUseOfNewLocation(Location location) {
         System.out.println(location.toString());
         System.out.println("Here.");
+
+        // Commented out following line to remove Indego from layout-v11\main.xml
+
         //((RideIndegoAdapter)nearbyStations.getAdapter()).removeAll();
 //        debugLocation = (TextView) findViewById(R.id.locationDebug);
 //        debugLocation.setText(location.toString());

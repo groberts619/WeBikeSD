@@ -5,7 +5,7 @@ import com.firebase.geofire.GeoLocation;
 /**
  * Created by toby on 7/22/15.
  */
-public class IndegoStation {
+    public class IndegoStation {
     public String kioskId;
     public String name;
     public Integer bikesAvailable;
