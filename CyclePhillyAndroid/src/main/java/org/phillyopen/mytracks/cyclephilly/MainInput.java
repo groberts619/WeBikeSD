@@ -469,7 +469,7 @@ public class MainInput extends ActionBarActivity {
 
     private void showWelcomeDialog() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Please update your personal details so we can learn a bit about you.\n\nThen, try to use WeBikeSD every time you ride. Your trip routes will be sent to regional transportation planners to improve biking in the Philadelphia area!\n\nThanks,\nThe WeBikeSD team")
+        builder.setMessage("Please update your personal details so we can learn a bit about you.\n\nThen, please use WeBikeSD every time you ride. Your trip routes will be sent to regional transportation planners to improve biking in the San Diego area!\n\nThanks,\nThe WeBikeSD team")
                .setCancelable(false).setTitle("Welcome to WeBikeSD!")
                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                    public void onClick(final DialogInterface dialog, final int id) {

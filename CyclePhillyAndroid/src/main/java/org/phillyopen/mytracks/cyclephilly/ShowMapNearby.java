@@ -163,7 +163,7 @@ public class ShowMapNearby extends FragmentActivity {
 		    tv = (TextView)popup.findViewById(R.id.snippet);
 		    tv.setText("\nThis map uses Google Maps data to show streets.\n\n" +
 		    		"The information for the bicycle routes and parking racks " +
-		    		"comes from the City of Philadelphia, and is presented using MapBox.\n");
+		    		"comes from the City of San Diego, and is presented using MapBox.\n");
 		    tv.setTextColor(Color.BLACK);
 		    popup.setBackgroundColor(Color.LTGRAY);
 		    
