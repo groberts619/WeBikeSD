@@ -69,6 +69,22 @@
 	    <item>One year or less</item>
 	    <item>Just trying it out / just started</item>
 	</string-array>
+
+	<string-array name="usernotesArray">
+		<item></item>
+		<item>Note this asset</item>
+		<item>Water fountains</item>
+		<item>Secret passage</item>
+		<item>Public restrooms</item>
+		<item>Bike ships</item>
+		<item>Bike parking</item>
+		<item>Pavement issue</item>
+		<item>Traffic signal</item>
+		<item>Enforcement</item>
+		<item>Bike parking</item>
+		<item>Bike lane issue</item>
+		<item>Note this issue</item>
+	</string-array>
 	
 	<string name="nearbyRacksRoutes">Nearby Bike Racks and Routes:</string>
 	<string name="mapOfTrip">Map of your trip:</string>
