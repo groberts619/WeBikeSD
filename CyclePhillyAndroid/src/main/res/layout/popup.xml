@@ -11,7 +11,7 @@
 	android:layout_gravity="top"
 	android:padding="2dip"
 	android:src="@drawable/webikesdicon25x25"
-	android:contentDescription="@string/icon"/>
+	android:contentDescription="@string/popupNoteThis"/>
 
 	<LinearLayout
 		android:layout_width="match_parent"
@@ -24,7 +24,7 @@
 			android:layout_height="wrap_content"
 			android:textSize="20sp"
 			android:textStyle="bold"/>
-		
+
 		<TextView
 			android:id="@+id/snippet"
 			android:layout_width="wrap_content"

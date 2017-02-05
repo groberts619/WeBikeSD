@@ -73,7 +73,7 @@
 
     </RelativeLayout>
 
-    <Button android:layout_height="wrap_content" android:id="@+id/ButtonStart" android:text="@string/startNewTrip" android:textStyle="bold" android:layout_width="fill_parent" android:drawableLeft="@drawable/bike" android:layout_margin="8sp" android:hapticFeedbackEnabled="true" android:textSize="24sp"></Button>
+    <Button android:layout_height="wrap_content" android:id="@+id/ButtonStart" android:text="@string/startNewTrip" android:textStyle="bold" android:layout_width="fill_parent" android:drawableLeft="@drawable/webikesdicon100x100" android:layout_margin="8sp" android:hapticFeedbackEnabled="true" android:textSize="24sp"></Button>
 
     <TextView
         android:layout_width="wrap_content"

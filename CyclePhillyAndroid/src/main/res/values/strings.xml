@@ -19,7 +19,7 @@
 	<string name="promptPurpose">Select the main purpose of this trip</string>
 	<string name="uploadProgressTitle">Sending…</string>
 	<string name="uploadProgressMessage">Sending your trip.\n\nThanks for using WeBikeSD!</string>
-
+	<string name="popupNoteThis">Note this?</string>
 	<string name="cloudy">&#xe61d;</string>
 	<string-array name="ageArray">
 	    <item></item>
