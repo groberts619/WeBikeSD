@@ -25,5 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.SupportMapFragment"/>
+	<Button android:layout_height="95dp" android:id="@+id/ButtonStart" android:text="@string/startNewTrip" android:textStyle="bold" android:layout_width="fill_parent" android:drawableLeft="@drawable/webikesdicon100x100" android:layout_margin="8sp" android:hapticFeedbackEnabled="true" android:textSize="24sp"/>
+
 </LinearLayout>
 

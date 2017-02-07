@@ -20,6 +20,14 @@
 		android:layout_width="fill_parent" android:layout_marginLeft="7sp"
 		android:paddingBottom="8sp"
 		android:layout_marginRight="7sp"></TextView>
+
+	<Button
+		android:id="@+id/btnBack"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Back"
+		android:drawableLeft="@drawable/webikesdicon25x25"/>
+
 	<fragment
         android:id="@+id/map"
         android:layout_width="match_parent"

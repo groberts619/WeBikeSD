@@ -34,14 +34,17 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
+import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -146,6 +149,18 @@ public class ShowMap extends FragmentActivity {
 		} catch (Exception e) {
 			Log.d("Map error",e.toString(), e);
 		}
+
+		Button btn = (Button) findViewById(R.id.btnBack);
+		btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				Intent intent = new Intent(ShowMap.this,
+						MainInput.class);
+				startActivity(intent);
+				finish();
+			}
+
+		});
 	}
 
 	private class AddPointsToMapLayerTask extends AsyncTask<TripData, Integer, PolylineOptions> {

@@ -24,11 +24,14 @@ public class UserNotes extends Activity implements AdapterView.OnItemClickListen
         super.onCreate(savedInstanceState);
         setContentView(R.layout.usernotes);
 
+        UserNotes.this.setTitle("WeBikeSD - Notes");
+
         listView = (ListView) findViewById(R.id.notesList);
         listView.setOnItemClickListener(this);
     }
     @Override
     public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
+        setContentView(R.layout.usernotesdetails);
         Toast.makeText(getApplicationContext(), ((TextView) view).getText(),
                 Toast.LENGTH_SHORT).show();
     }
