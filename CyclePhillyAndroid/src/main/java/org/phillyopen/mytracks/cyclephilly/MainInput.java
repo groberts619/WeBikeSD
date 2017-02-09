@@ -96,7 +96,7 @@ public class MainInput extends ActionBarActivity {
     private final static int MENU_CONTACT_US = 1;
     //private final static int MENU_MAP = 2;
     private final static int MENU_LEGAL_INFO = 3;
-    private final static int MENU_NOTE_THIS = 4;
+    private final static int MENU_REPORT_THIS = 4;
     public final static int PREF_ANONID = 13;
     final String DEGREE  = "\u00b0";
     public final static String FIREBASE_REF = "https://webikesd-android.firebaseio.com";
@@ -351,7 +351,7 @@ public class MainInput extends ActionBarActivity {
         indegoList = new ArrayList<IndegoStation>();
         System.out.println("lo: "+mySpot.toString());
 
-        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mySpot.longitude,mySpot.latitude), 0.5);
+        GeoQuery geoQuery = geoFire.queryAtLocation(new GeoLocation(mySpot.latitude,mySpot.longitude), 0.5);
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
@@ -577,7 +577,7 @@ public class MainInput extends ActionBarActivity {
         menu.add(0, MENU_USER_INFO, 0, "Edit User Info").setIcon(android.R.drawable.ic_menu_edit);
         //menu.add(0, MENU_MAP, 0, "Cycling Map").setIcon(android.R.drawable.ic_menu_compass);
         //menu.add(0, MENU_LEGAL_INFO, 0, "Legal Information").setIcon(android.R.drawable.ic_menu_info_details);
-        menu.add(0, MENU_NOTE_THIS, 0, "Note This...").setIcon(android.R.drawable.ic_menu_edit);
+        menu.add(0, MENU_REPORT_THIS, 0, "Report This...").setIcon(android.R.drawable.ic_menu_edit);
         return true;
     }
 
@@ -594,7 +594,7 @@ public class MainInput extends ActionBarActivity {
             myIntent.putExtra(Intent.EXTRA_SUBJECT, "WeBikeSD Android App");
             startActivity(Intent.createChooser(myIntent, "Send email..."));
             return true;
-        case MENU_NOTE_THIS:
+        case MENU_REPORT_THIS:
             startActivity(new Intent(this, UserNotes.class));
             return true;
         /*case MENU_MAP:

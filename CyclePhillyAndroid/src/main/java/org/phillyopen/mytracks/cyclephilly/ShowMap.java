@@ -150,17 +150,6 @@ public class ShowMap extends FragmentActivity {
 			Log.d("Map error",e.toString(), e);
 		}
 
-		Button btn = (Button) findViewById(R.id.btnBack);
-		btn.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				Intent intent = new Intent(ShowMap.this,
-						MainInput.class);
-				startActivity(intent);
-				finish();
-			}
-
-		});
 	}
 
 	private class AddPointsToMapLayerTask extends AsyncTask<TripData, Integer, PolylineOptions> {

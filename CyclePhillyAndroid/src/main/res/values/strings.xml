@@ -71,18 +71,18 @@
 	</string-array>
 
 	<string-array name="usernotesArray">
-		<item>Note this asset</item>
-		<item>Water fountains</item>
-		<item>Secret passage</item>
-		<item>Public restrooms</item>
-		<item>Bike ships</item>
-		<item>Bike parking</item>
-		<item>Pavement issue</item>
-		<item>Traffic signal</item>
-		<item>Enforcement</item>
-		<item>Bike parking</item>
-		<item>Bike lane issue</item>
-		<item>Note this issue</item>
+		<item>Pavement Issue</item>
+		<item>Bike Lane Issue</item>
+		<item>Sidewalk</item>
+		<item>Litter/Dumping</item>
+		<item>Pothole</item>
+		<item>Traffic Sign</item>
+		<item>Traffic Signal</item>
+		<item>Traffic Control</item>
+		<item>Street Light</item>
+		<item>Dead Animal</item>
+		<item>Tree Hazard</item>
+		<item>Street Flooded</item>
 	</string-array>
 	
 	<string name="nearbyRacksRoutes">Nearby Bike Racks and Routes:</string>
