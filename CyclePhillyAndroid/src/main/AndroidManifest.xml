@@ -78,17 +78,8 @@
             android:finishOnTaskLaunch="true"
             android:launchMode="singleInstance" >
         </activity>
-        <activity
-            android:name="org.phillyopen.mytracks.cyclephilly.UserNotesDetails"
-            android:finishOnTaskLaunch="true"
-            android:launchMode="singleInstance" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <service
+    <service
             android:name="org.phillyopen.mytracks.cyclephilly.RecordingService"
             android:enabled="true"
             android:exported="false" >

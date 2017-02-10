@@ -29,7 +29,6 @@ public class UserNotes extends Activity implements AdapterView.OnItemClickListen
     }
     @Override
     public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
-        setContentView(R.layout.usernotesdetails);
 
         // Added email to San Diego Street Services when clicking on ListView item
         Intent myIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
